@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+nav {
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+}
+
+nav .brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+/* Main content */
+.container {
+    margin-left: 15%;
+    width: 85%;
+    padding: 20px;
+    background-image: url('bg.jpg');  /* Using relative path for background image */
+    background-size: cover;  /* Ensures the image covers the entire content area */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;  /* Full viewport height */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);  /* Dark overlay for readability */
+}
+
+.songList {
+    margin-top: 20px;
+}
+
+.songList h1 {
+    font-size: 2rem;
+}
+
+.songItemContainer {
+    margin-top: 30px;
+}
+
+.songItem {
+    background-color: #282828;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.songItem img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.songlistplay {
+    display: flex;
+    align-items: center;
+}
+
+.timestamp {
+    margin-right: 20px;
+}
+
+.songName {
+    font-size: 1rem;
+}
+
+/* Bottom music control bar */
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #333;
+}
+
+.icons i {
+    color: white;
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 60%;
+    margin: 0 20px;
+}
+
+.songInfo {
+    display: flex;
+    align-items: center;
+}
+
+.songInfo img {
+    margin-right: 10px;
+}
